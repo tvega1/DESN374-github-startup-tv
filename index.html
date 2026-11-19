@@ -1,83 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI+Design Studio Command Center</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A research dashboard for Moodtype Studio, a study of typography, color, emotion, and creative control.">
+  <title>Moodtype Studio · Research Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<!--
-  THIS IS YOUR DASHBOARD. GitHub Pages serves this file.
-  Replace the placeholder text below with the real content from your
-  AI+Design Studio Command Center (Canvas: Project 2, Step 2).
-  KEEP OR TRIM: delete any <section> you did not build - all seven or a
-  subset is fine. Beginnings-level content is fine; this is the on-ramp,
-  not Project 5. Make it yours; do not leave it looking like a template.
--->
 <body>
-  <header class="site-header">
-    <p class="eyebrow">AI + Design Studio &#183; Command Center</p>
-    <h1 id="project-title">Your Project Title</h1>
-    <p class="tagline">One-line summary of what you are investigating &#8212; and your name.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#main">Moodtype<span> Studio</span></a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#log">Experiment log</a></li>
+          <li><a href="#workspace">Workspace</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-
-    <!-- Project Identity Card -->
-    <section aria-labelledby="identity-h">
-      <h2 id="identity-h">Project Identity Card</h2>
-      <p>Title, curiosity statement, short summary, audience / context, and possible final direction(s).</p>
+  <main id="main" class="shell" tabindex="-1">
+    <section class="hero" aria-labelledby="question">
+      <div class="hero-copy">
+        <p class="section-label">Research question</p>
+        <h1 id="question">How can AI help designers turn words and emotions into <em>typography and color</em> combinations without taking away their creativity?</h1>
+        <p class="intro">Moodtype Studio explores how AI can suggest several ways to style a word. Designers can compare the results, adjust the type and palette, and decide which direction feels right.</p>
+        <a class="button" href="#references">See the prototype</a>
+      </div>
+      <aside class="specimen" aria-label="Dreamy type and color study">
+        <div class="specimen-art">
+          <span class="specimen-label">Type &amp; color study</span>
+          <span class="specimen-word">dreamy</span>
+        </div>
+        <ul class="swatches" role="list" aria-label="Lucid Bloom palette">
+          <li><span class="swatch violet"></span>Violet</li>
+          <li><span class="swatch magenta"></span>Magenta</li>
+          <li><span class="swatch pink"></span>Pink</li>
+          <li><span class="swatch gold"></span>Gold</li>
+        </ul>
+      </aside>
     </section>
 
-    <!-- Inquiry Brief -->
-    <section aria-labelledby="inquiry-h">
-      <h2 id="inquiry-h">Inquiry Brief</h2>
-      <p>Your research question, why it matters, what you need to learn, and 2&#8211;3 possible final outcomes.</p>
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <div class="section-intro">
+        <h2 id="research-heading">Sources &amp; notes</h2>
+        <p>How the research shaped the prototype.</p>
+      </div>
+      <div class="source-grid">
+        <article class="source-card type-card">
+          <h3>Typography changes the tone</h3>
+          <p>In my “happy” studies, changes in typeface, weight, and spacing gave the same word different personalities. I checked the available styles in Cooper Std, Futura PT, and Acumin Pro. Moodtype should offer several options and show the settings each typeface supports.</p>
+          <ul class="source-links">
+            <li><a href="https://www.adobe.com/express/learn/blog/psychology-font">Adobe Express · Font psychology</a></li>
+            <li><a href="https://fonts.adobe.com/">Adobe Fonts · Typeface library</a></li>
+            <li><a href="https://design.google/library/choosing-web-fonts-beginners-guide">Google Design · Choosing a web font</a></li>
+          </ul>
+        </article>
+        <article class="source-card color-card">
+          <h3>Color depends on context</h3>
+          <p>My visual study compared bright, rounded treatments for “happy” with quieter colors and open spacing for “calm,” and stronger colors and heavier type for “bold.” Culture and context can change those associations. Moodtype should show the type and palette together so users can judge the mood for themselves.</p>
+          <ul class="source-links">
+            <li><a href="https://www.cosmos.so/">Cosmos · Visual inspiration</a></li>
+            <li><a href="https://www.adobe.com/creativecloud/design/discover/color-meaning.html">Adobe · Guide to color meaning</a></li>
+            <li><a href="https://www.verywellmind.com/color-psychology-2795824">Verywell Mind · Color psychology overview</a></li>
+          </ul>
+        </article>
+        <article class="source-card access-card">
+          <h3>Contrast makes a design readable</h3>
+          <p>In my contrast study, yellow on white was harder to read than dark blue on white. I want the prototype to flag low contrast and suggest alternatives people can choose to apply.</p>
+          <ul class="source-links">
+            <li><a href="https://dap.berkeley.edu/websites/accessibility-content-editors/color-contrast">UC Berkeley · Color contrast</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">W3C · Minimum contrast guidance</a></li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <!-- Source Starter List -->
-    <section aria-labelledby="sources-h">
-      <h2 id="sources-h">Source Starter List</h2>
-      <ul>
-        <li>Source 1 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 2 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 3 &#8212; optional</li>
+    <section id="references" class="section" aria-labelledby="references-heading">
+      <div class="section-intro">
+        <h2 id="references-heading">Reference images</h2>
+        <p>From a notebook sketch to three visual directions for “Dreamy.”</p>
+      </div>
+      <div class="reference-grid">
+        <figure class="reference">
+          <img src="moodtype-wireframe.webp" width="1800" height="1272" alt="Hand-drawn Moodtype wireframe with a word input and related words on the left, a central ‘Dreamy’ preview with three mood tabs, and typography sliders and a contrast check on the right." loading="lazy">
+          <figcaption>
+            <h3><em>Dreamy</em> on paper</h3>
+            <p>The sketch puts word exploration, a live preview, and design controls side by side. It also shows how users could select a typeface, adjust scale, weight, and kerning, and check color contrast.</p>
+            <a href="moodtype-wireframe.webp">View the full-size sketch</a>
+          </figcaption>
+        </figure>
+        <figure class="reference">
+          <img src="moodtype-dreamy.webp" width="2340" height="1322" alt="Moodtype Studio mockup with yellow serif ‘dreamy’ over pink and violet shapes, three palette options, word associations, and typography controls." loading="lazy">
+          <figcaption>
+            <h3>Three ways to feel <em>Dreamy</em></h3>
+            <p>The digital mockup carries the three-column layout forward and gives each mood a name and palette. Lucid Bloom feels ethereal and expressive, Cloud Study light and imaginative, and Afterglow romantic and cinematic.</p>
+            <a href="moodtype-dreamy.webp">View the full-size mockup</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="log" class="section" aria-labelledby="log-heading">
+      <div class="section-intro">
+        <h2 id="log-heading">Notes &amp; experiment log</h2>
+        <p>From the first pitch to the “Dreamy” mockup.</p>
+      </div>
+      <div class="log-layout">
+        <ol class="timeline" role="list">
+          <li><time datetime="2026-10-29">Oct 29, 2026</time><div><h3>Territory pitch</h3><p>Explored a type generator, a palette explorer, and a word explorer. Asked where AI suggestions should end and the designer should take over.</p></div></li>
+          <li><time datetime="2026-11-03">Nov 3, 2026</time><div><h3>AI brainstorming</h3><p>Refined broad project ideas into a word-to-design tool. The first suggestions felt generic, and follow-up prompts helped narrow the direction.</p></div></li>
+          <li><time datetime="2026-11-05">Nov 5, 2026</time><div><h3>Typography studies</h3><p>Compared different treatments of “happy” and checked the actual font styles in Adobe Fonts. Identified weight and letter spacing as useful controls.</p></div></li>
+          <li><time datetime="2026-11-13">Nov 13, 2026</time><div><h3>Color contrast comparison</h3><p>Compared text and background pairings. Planned a contrast check with suggestions the designer could choose to apply.</p></div></li>
+          <li><time datetime="2026-11-17">Nov 17, 2026</time><div><h3>Visual mood study</h3><p>Compared “happy,” “calm,” and “bold” through type, color, and composition. Decided to preview combinations together.</p></div></li>
+          <li><time datetime="2026-11-19">Nov 19, 2026</time><div><h3>“Dreamy” sketch and mockup</h3><p>Shared a wireframe and digital mockup showing how word exploration, three mood previews, and design controls fit together.</p></div></li>
+        </ol>
+        <aside class="roadmap" aria-labelledby="roadmap-heading">
+          <h3 id="roadmap-heading">Roadmap</h3>
+          <ol role="list">
+            <li><strong>Week 9 · Test</strong><span>Collect feedback on the word input, recommendations, and customization.</span></li>
+            <li><strong>Week 10 · Refine</strong><span>Improve type, layout, accessibility, and controls based on what I learn.</span></li>
+            <li><strong>Week 11 · Present</strong><span>Show the prototype, experiments, and creative decisions.</span></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section id="workspace" class="section workspace" aria-labelledby="workspace-heading">
+      <div class="section-intro">
+        <h2 id="workspace-heading">Workspace links</h2>
+        <p>I keep my research and process notes in Milanote and use Figma for layouts and prototyping.</p>
+      </div>
+      <ul class="workspace-links" role="list">
+        <li><a href="https://app.milanote.com/">Open Milanote</a><span>Command Center, pitch, and research notes</span></li>
+        <li><a href="https://www.figma.com/">Open Figma</a><span>Layouts and prototype workspace</span></li>
+        <li><a href="https://github.com/tvega1/DESN374-github-startup-tv">View the GitHub repository</a><span>Dashboard files and publishing history</span></li>
       </ul>
     </section>
-
-    <!-- Project Brief / Weekly Roadmap -->
-    <section aria-labelledby="roadmap-h">
-      <h2 id="roadmap-h">Project Brief / Weekly Roadmap</h2>
-      <p>Weeks 5&#8211;11: goal, activities, tools, output, and success indicator for each week.</p>
-    </section>
-
-    <!-- Prompt Log -->
-    <section aria-labelledby="prompts-h">
-      <h2 id="prompts-h">Prompt Log</h2>
-      <p>Each entry: the prompt used, model / tool, output summary, and what changed afterward.</p>
-    </section>
-
-    <!-- Experiment Log -->
-    <section aria-labelledby="experiments-h">
-      <h2 id="experiments-h">Experiment Log</h2>
-      <p>Each experiment: what you tried, notes, what worked, what failed, and the next step.</p>
-    </section>
-
-    <!-- Links / Workspace Board -->
-    <section aria-labelledby="links-h">
-      <h2 id="links-h">Links / Workspace Board</h2>
-      <ul>
-        <li>Milanote / Notion / Figma board</li>
-        <li>AI tools used</li>
-        <li>Repo / site link</li>
-        <li>Working files (Figma, code, assets)</li>
-      </ul>
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    <p>DESN 374 &#183; Command Center &#183; built with the Interview &#8594; Brainstorm &#8594; Plan &#8594; Code &#8594; Commit workflow</p>
+    <div class="shell footer-inner"><span>Moodtype Studio · Research Dashboard</span><a href="#top">Back to top</a></div>
   </footer>
 </body>
 </html>
